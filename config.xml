@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dqtv xmlns:videodock="http://video.videodock.com">
+	<videodock:audio url="link:0"></videodock:audio>
+	<videodock:grid size="9" cols="3" width="640" height="360">
+		<videodock:content audio="0" startbuffer="4" endbuffer="10" position="1" width="1920" height="1080" x="0" y="0" url="" bitrate="" crop_top="0" crop_left="16" crop_right="0" crop_bottom="2" label="">
+
+			<videodock:video label="Good" url="mp4:hdstream_800" bitrate="928" />
+
+			<videodock:video label="Better" url="mp4:hdstream_2000" bitrate="3128" isDefault="true" />
+			<videodock:video label="Best" url="mp4:hdstream_source" bitrate="5128" />
+
+		</videodock:content>
+
+		<videodock:content audio="1" startbuffer="3" endbuffer="15" position="0" width="640" height="360" x="0" y="0" bitrate="500" url="mobielecam1" crop_top="0" crop_left="0" crop_right="6" crop_bottom="0" label=""></videodock:content>
+
+	</videodock:grid>
+	<videodock:chat interval="10"></videodock:chat>
+
+	<videodock:streamer subscribe="true">rtmp://cdn.dqtv.videodock.eu/disquiet-edge</videodock:streamer>
+	<videodock:zoom elastic="false" steps="5" minheight="0" maxheight="360"></videodock:zoom>
+</dqtv>
